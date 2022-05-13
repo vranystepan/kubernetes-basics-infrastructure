@@ -36,9 +36,9 @@ resource "aws_lb" "eks_loadbalancer" {
   internal           = false
   load_balancer_type = "application"
   security_groups    = [aws_security_group.eks_loadbalancer.id]
-  subnets            = [
-      aws_subnet.eks_lb_1.id,
-      aws_subnet.eks_lb_2.id,
+  subnets = [
+    aws_subnet.eks_lb_1.id,
+    aws_subnet.eks_lb_2.id,
   ]
 
   enable_deletion_protection = false
@@ -58,7 +58,7 @@ resource "aws_lb_target_group" "https" {
     timeout             = 5
     interval            = 10
     matcher             = "404"
-    protocol = "HTTPS"
+    protocol            = "HTTPS"
   }
 }
 

@@ -53,7 +53,7 @@ resource "aws_subnet" "eks_lb_1" {
   cidr_block = "10.0.3.0/24"
 
   tags = {
-    Name                                        = "EKS_lb_1"
+    Name = "EKS_lb_1"
   }
 }
 
@@ -62,7 +62,7 @@ resource "aws_subnet" "eks_lb_2" {
   cidr_block = "10.0.4.0/24"
 
   tags = {
-    Name                                        = "EKS_lb_2"
+    Name = "EKS_lb_2"
   }
 }
 

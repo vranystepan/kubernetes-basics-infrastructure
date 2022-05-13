@@ -14,7 +14,7 @@ provider "kubernetes" {
 
 provider "helm" {
   kubernetes {
-    host = aws_eks_cluster.control_plane.endpoint
+    host     = aws_eks_cluster.control_plane.endpoint
     token    = data.aws_eks_cluster_auth.control_plane.token
     insecure = true
   }
