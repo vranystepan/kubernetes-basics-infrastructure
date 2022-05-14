@@ -16,3 +16,7 @@ variable "k8s_architecture" {
   type    = string
   default = "x86_64"
 }
+
+variable "zone_id" {
+  type = string
+}

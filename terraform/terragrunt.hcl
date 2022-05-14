@@ -7,4 +7,5 @@ locals {
 
 inputs = {
     cluster_name = local.parameters.eks.cluster_name
+    zone_id = local.secrets.aws.zone_id
 }
