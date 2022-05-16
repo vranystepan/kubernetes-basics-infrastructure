@@ -1,6 +1,9 @@
 aws:
     account_id: ENC[AES256_GCM,data:cAOfTHtjtyOcKjD1,iv:IXKO5DntHixu1XOSmjm9rD5A2xMorLgTNoNNGqV+nnI=,tag:8UyEsHP5mb2Q5rD+RPcTZA==,type:int]
     zone_id: ENC[AES256_GCM,data:0/x0a3wt/hp/KSdA+S+1Yjd+kWw+,iv:zjNSoYLfDRyaX8v3P5/6WIQISvM0YuFjF9tJ+2eOgrc=,tag:llszbI9ZNSjTK8oh2SzLag==,type:str]
+gcp:
+    project_id: ENC[AES256_GCM,data:veAYfw5m6nCaO9Bu/ordDOc=,iv:k7q+WEqNkHB8RKiPf36fjRcgZDNq45+sGcpFTxgbG1Y=,tag:8fBmNMhHIPPsQ5OOS0fkiA==,type:str]
+lets_enrypt_email: ENC[AES256_GCM,data:JcrGGbIzIGNFGUgtWlKsxA==,iv:IRohITjIl7Ta/dVVsKKK/xMTrsZ9biDNuUWovSeZIWM=,tag:5PQCdWxsr6GDCFmB4GBVCA==,type:str]
 sops:
     kms: []
     gcp_kms: []
@@ -16,8 +19,8 @@ sops:
             U0R4SnhBUWhhYVJxOEI5ZlpieHl3OTgKtGBHDK1V5QkONYuMjgBkSN7YIYRGnFgH
             EbOQu9fDSfmuX2+bavNd5pO2dmbuUAutUEgWXwVOCtDuWkPl8m7N8g==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2022-05-14T10:29:59Z"
-    mac: ENC[AES256_GCM,data:XXLeK7lWPOp9Iqjxd348TA+xrZsXGB8uKtrZf7SeTf7F8csD871UQ07D5VIc3u2fUgPexo+gY8YCRszzG9qI0cY6bX5cQU07+YQXbUODY69AC2btEJmD8u4DpHZPoCqpVXb0GVpImpUZvieaCpZfQnk7EwFbW3vt++2Qq0zai3U=,iv:36OmoWV1JuOczH5uxfR3rveiGyd0O5HKfEAmEg58YfI=,tag:e4xo7QAs83kZkTbrEqAudQ==,type:str]
+    lastmodified: "2022-05-16T09:24:46Z"
+    mac: ENC[AES256_GCM,data:9ZW93SA3AGc9QDNrIcMVjQZAMphVpN74VJsMcs+irAQwmD5v1GB04ByzNzTNebKSfOKNZMcEOVrgI1Z5sBUB+IJS7/ztNAcW4QxgTVqPfBb68aR2Z5MVZn/OZNqQ4AbvKBVuJkwG8rePPthkMf9PPqT+3zmpFpranxwX1ncDIQI=,iv:0xbv5L/o64JX6wwGNMKoCPBkizUaG9VrSSwc4Z172v8=,tag:eCeA9MUa10R6sYuE1F/l2w==,type:str]
     pgp: []
     unencrypted_suffix: _unencrypted
     version: 3.7.1

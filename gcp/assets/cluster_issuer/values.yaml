@@ -1,0 +1,4 @@
+ingressClass: nginx
+email: ""
+server: "https://acme-v02.api.letsencrypt.org/directory"
+name: letsencrypt-prod
