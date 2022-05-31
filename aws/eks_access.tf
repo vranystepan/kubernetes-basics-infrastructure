@@ -75,19 +75,18 @@ resource "aws_iam_group_policy_attachment" "eks_access_student" {
   policy_arn = aws_iam_policy.eks_access_student_allow_assume.arn
 }
 
-// assign all privileges to students
-# resource "kubernetes_cluster_role_binding" "student" {
-#   metadata {
-#     name = "workshop-student"
-#   }
-#   role_ref {
-#     api_group = "rbac.authorization.k8s.io"
-#     kind      = "ClusterRole"
-#     name      = "cluster-admin"
-#   }
-#   subject {
-#     kind      = "Group"
-#     name      = "workshop:student"
-#     api_group = "rbac.authorization.k8s.io"
-#   }
-# }
+resource "kubernetes_cluster_role_binding" "student" {
+  metadata {
+    name = "workshop-student"
+  }
+  role_ref {
+    api_group = "rbac.authorization.k8s.io"
+    kind      = "ClusterRole"
+    name      = "cluster-admin"
+  }
+  subject {
+    kind      = "Group"
+    name      = "workshop:student"
+    api_group = "rbac.authorization.k8s.io"
+  }
+}
