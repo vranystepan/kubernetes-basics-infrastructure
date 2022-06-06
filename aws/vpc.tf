@@ -11,6 +11,7 @@ resource "aws_vpc" "main" {
 resource "aws_subnet" "eks_control_plane_1" {
   vpc_id     = aws_vpc.main.id
   cidr_block = "10.0.1.0/24"
+  availability_zone = "eu-west-1a"
 
   tags = {
     Name                                        = "EKS_control_plane_1"
@@ -21,6 +22,7 @@ resource "aws_subnet" "eks_control_plane_1" {
 resource "aws_subnet" "eks_control_plane_2" {
   vpc_id     = aws_vpc.main.id
   cidr_block = "10.0.2.0/24"
+  availability_zone = "eu-west-1b"
 
   tags = {
     Name                                        = "EKS_control_plane_2"
@@ -31,6 +33,7 @@ resource "aws_subnet" "eks_control_plane_2" {
 resource "aws_subnet" "eks_workers_1" {
   vpc_id     = aws_vpc.main.id
   cidr_block = "10.0.8.0/21"
+  availability_zone = "eu-west-1a"
 
   tags = {
     Name                                        = "EKS_workers_1"
@@ -41,6 +44,7 @@ resource "aws_subnet" "eks_workers_1" {
 resource "aws_subnet" "eks_workers_2" {
   vpc_id     = aws_vpc.main.id
   cidr_block = "10.0.16.0/21"
+  availability_zone = "eu-west-1b"
 
   tags = {
     Name                                        = "EKS_workers_2"
@@ -51,6 +55,7 @@ resource "aws_subnet" "eks_workers_2" {
 resource "aws_subnet" "eks_lb_1" {
   vpc_id     = aws_vpc.main.id
   cidr_block = "10.0.3.0/24"
+  availability_zone = "eu-west-1a"
 
   tags = {
     Name = "EKS_lb_1"
@@ -60,6 +65,7 @@ resource "aws_subnet" "eks_lb_1" {
 resource "aws_subnet" "eks_lb_2" {
   vpc_id     = aws_vpc.main.id
   cidr_block = "10.0.4.0/24"
+  availability_zone = "eu-west-1b"
 
   tags = {
     Name = "EKS_lb_2"
