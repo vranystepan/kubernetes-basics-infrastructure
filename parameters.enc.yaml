@@ -3,6 +3,8 @@ aws:
     zone_id: ENC[AES256_GCM,data:0/x0a3wt/hp/KSdA+S+1Yjd+kWw+,iv:zjNSoYLfDRyaX8v3P5/6WIQISvM0YuFjF9tJ+2eOgrc=,tag:llszbI9ZNSjTK8oh2SzLag==,type:str]
 gcp:
     project_id: ENC[AES256_GCM,data:veAYfw5m6nCaO9Bu/ordDOc=,iv:k7q+WEqNkHB8RKiPf36fjRcgZDNq45+sGcpFTxgbG1Y=,tag:8fBmNMhHIPPsQ5OOS0fkiA==,type:str]
+digitalocean:
+    do_token: ENC[AES256_GCM,data:RepRCZIkkTj7WR9PRM+RnC/enF5t/wYZawTkYrhNm5mndgk+v+OWzgJRoZkqql+RNf9KkDBwY60nOaNO0kdf99VUXjzUABk=,iv:OxaW+XOkf0tByaaDw+J7rb+oHVfedJLlfV1fNwAkn1M=,tag:BkGNYY/rw/dBJ9++Jmlrow==,type:str]
 lets_enrypt_email: ENC[AES256_GCM,data:JcrGGbIzIGNFGUgtWlKsxA==,iv:IRohITjIl7Ta/dVVsKKK/xMTrsZ9biDNuUWovSeZIWM=,tag:5PQCdWxsr6GDCFmB4GBVCA==,type:str]
 sops:
     kms: []
@@ -19,8 +21,8 @@ sops:
             U0R4SnhBUWhhYVJxOEI5ZlpieHl3OTgKtGBHDK1V5QkONYuMjgBkSN7YIYRGnFgH
             EbOQu9fDSfmuX2+bavNd5pO2dmbuUAutUEgWXwVOCtDuWkPl8m7N8g==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2022-05-16T09:24:46Z"
-    mac: ENC[AES256_GCM,data:9ZW93SA3AGc9QDNrIcMVjQZAMphVpN74VJsMcs+irAQwmD5v1GB04ByzNzTNebKSfOKNZMcEOVrgI1Z5sBUB+IJS7/ztNAcW4QxgTVqPfBb68aR2Z5MVZn/OZNqQ4AbvKBVuJkwG8rePPthkMf9PPqT+3zmpFpranxwX1ncDIQI=,iv:0xbv5L/o64JX6wwGNMKoCPBkizUaG9VrSSwc4Z172v8=,tag:eCeA9MUa10R6sYuE1F/l2w==,type:str]
+    lastmodified: "2022-06-20T08:58:19Z"
+    mac: ENC[AES256_GCM,data:k7ZBn04/gkV92L5S+RFQvY3rZ+jCPOe6rGI5oAWZEQm3/DwlCMNN+M07pMS7Bw0JcMC95JsLWCfVe8TZUJ+kkO8sz3qKTvHXyUapERomNMf5/8mjZARK23ZnGdZMfCI+duwW6ATv61ryyehQxROVCQCl+yA0IFkmd0TSXfqraFM=,iv:F3FlXWFFE1Lr/SByq/M6O2ttarPxXzea7Cs/7N4Xxyk=,tag:xSvYx4I5J0LgqyaEm/I22Q==,type:str]
     pgp: []
     unencrypted_suffix: _unencrypted
     version: 3.7.1
